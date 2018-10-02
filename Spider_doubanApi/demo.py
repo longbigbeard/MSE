@@ -4,64 +4,43 @@
 # @File    : demo.py
 # @Software: PyCharm
 
-userAgent_list = []
-userAgent_list.append(
-    'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 OPR/26.0.1656.60')
-userAgent_list.append('Opera/8.0 (Windows NT 5.1; U; en)')
-userAgent_list.append('Mozilla/5.0 (Windows NT 5.1; U; en; rv:1.8.1) Gecko/20061208 Firefox/2.0.0 Opera 9.50')
-userAgent_list.append('Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 9.50')
+list = ['106.75.164.15:3128',
+'115.46.97.53:8123',
+'123.244.148.4:32472',
+'60.216.101.46:59351',
+'123.55.152.171:33249',
+'182.88.129.78:8123',
+'116.255.176.20:8088',
+'110.73.2.29:8123',
+'110.73.7.61:8123',
+'111.160.236.84:39692',
+'119.254.94.108:51420',
+'110.73.2.109:8123',
+'121.31.101.209:8123',
+'182.88.214.62:8123',
+'182.88.190.165:8123',
+'175.17.204.17:36132',
+'182.88.14.47:8123',
+'117.26.40.147:29605',
+'180.110.4.101:808',
+'121.228.50.32:3128',
+'122.96.93.158:49435',
+'59.58.202.246:43140',
+'106.56.102.10:808',
+'114.223.245.247:808',
+'175.148.78.122:1133',
+'171.39.9.70:8123',
+'182.240.6.90:8118',
+'171.37.154.242:8123',
+'222.182.121.81:8118',
+'171.12.164.113:61234',
+'117.24.60.249:25766',
+'27.153.66.119:29781']
 
-# Firefox
-userAgent_list.append('Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0')
-userAgent_list.append(
-    'Mozilla/5.0 (X11; U; Linux x86_64; zh-CN; rv:1.9.2.10) Gecko/20100922 Ubuntu/10.10 (maverick) Firefox/3.6.10')
+for lin in list:
+    line = "{"+"'http':"+"'"+lin+"'"+","
+    lines = "'https':"+"'"+lin+"'"+"},"
 
-# Safari
-userAgent_list.append(
-    'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534.57.2 (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2')
+    print(line)
+    print(lines)
 
-# chrome
-userAgent_list.append(
-    'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36')
-userAgent_list.append(
-    'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11')
-userAgent_list.append(
-    'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.133 Safari/534.16')
-
-# 360
-userAgent_list.append(
-    'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.101 Safari/537.36')
-userAgent_list.append('Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko')
-
-# 淘宝浏览器
-userAgent_list.append(
-    'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.11 TaoBrowser/2.0 Safari/536.11')
-
-# 猎豹浏览器
-userAgent_list.append(
-    'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.71 Safari/537.1 LBBROWSER')
-userAgent_list.append(
-    'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; LBBROWSER)')
-userAgent_list.append(
-    'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; QQDownload 732; .NET4.0C; .NET4.0E; LBBROWSER)"')
-
-# QQ浏览器
-userAgent_list.append(
-    'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; QQBrowser/7.0.3698.400)')
-userAgent_list.append(
-    'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; QQDownload 732; .NET4.0C; .NET4.0E)')
-
-# 　sogou浏览器
-userAgent_list.append(
-    'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 SE 2.X MetaSr 1.0')
-userAgent_list.append(
-    'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; SE 2.X MetaSr 1.0)')
-
-# 　maxthon浏览器
-userAgent_list.append(
-    'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.3.4000 Chrome/30.0.1599.101 Safari/537.36')
-
-# UC浏览器
-userAgent_list.append(
-    'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 UBrowser/4.0.3214.0 Safari/537.36')
-print(userAgent_list)
