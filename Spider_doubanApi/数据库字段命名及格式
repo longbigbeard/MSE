@@ -1,0 +1,33 @@
+以下是根据isbn爬取的数据有选择的保存到数据的字段命名以及格式：
+数据库：kes_douban
+数据表：douban_isbn_book
+
+id: 自增  主键
+rating_numTaters: varchar(10)可空 豆瓣评论的人数
+rating_average: varchar(10)可空 豆瓣评论的评分
+subtitle：varchar(100) 可空  书籍副标题
+author：varchar(100) 不空  作者
+pubdate：varchar(20) 可空  出版时间
+tags：varchar(300) 可空 书籍标签
+origin_title：varchar(100)可空 书籍曾用名
+image：varchar(300) 不空 书籍封面豆瓣地址
+binding：varchar(20) 可空  装订格式
+translator：varchar(20) 可空 翻译作者
+catalog：longtext 可空 书籍目录
+pages：varchar(20) 可空 书籍页数
+images_samll:varchar(300) 可空 书籍封面豆瓣地址 缩略图
+images_large:varchar(300) 可空 书籍封面豆瓣地址 大图
+images_medium:varchar(300) 可空 书籍封面豆瓣地址 正常图
+publisher：varchar(50) 可空 出版社
+isbn10: varchar(20) 可空 isbn10
+isbn13: varchar(20) 可空 isbn13
+title: varchar(50) 不空  书籍名称
+author_intro：longtext 可空 作者简介
+price：varchar(20) 可空 作品价格
+
+rating_numTaters,rating_average,subtitle,author,pubdate,tags,origin_title,image,binding,translator,catalog,pages,images_samll,images_large,images_medium,publisher,isbn10,isbn13,title,author_intro,price
+
+
+
+
+

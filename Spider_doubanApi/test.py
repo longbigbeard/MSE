@@ -11,7 +11,7 @@ import sys
 
 '''
     连接数据库
-    args：db_name（数据库名称）
+    args：db_name(数据库名称)
     returns:db
 
 '''
@@ -30,7 +30,7 @@ def mysql_link(de_name):
 
 '''
     读取excel函数
-    args：excel_file（excel文件，目录在py文件同目录）
+    args：excel_file(excel文件，目录在py文件同目录)
     returns：book
 '''
 
@@ -46,9 +46,9 @@ def open_excel(excel_file):
 
 '''
     执行插入操作
-    args:db_name（数据库名称）
-         table_name(表名称）
-         excel_file（excel文件名，把文件与py文件放在同一目录下）
+    args:db_name(数据库名称)
+         table_name(表名称)
+         excel_file(excel文件名，把文件与py文件放在同一目录下)
 
 '''
 
